@@ -1,308 +1,401 @@
 <!DOCTYPE html>
-<!--
-	Strongly Typed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>TRAVELER - Free Travel Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-	<title>Licni blog</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="styles.css" />
-</head>
+    <meta
+      name="keywords"
+      content="Travel, Agency, South America, Best price, Hotels"
+    />
+    <meta
+      name="description"
+      content="Whether you choose to stay in one of our Gourmet Inclusive® properties, an à la carte hotel, an all-inclusive resort or a private villa, your experience will be one that you'll never forget. "
+    />
+    <meta name="copyright" content="TRAVELER 2022" />
+    <!-- Favicon -->
+    <!-- <link href="img/favicon.ico" rel="icon" /> -->
 
-<body class="homepage is-preload">
-	<div id="page-wrapper">
-		<!-- Header -->
-		<section id="header">
-			<div class="container">
-				<!-- Logo -->
-				<h1 id="logo"><a href="index.html">Licni blog putovanja</a></h1>
-				<!-- Nav -->
-				<nav id="nav">
-					<ul>
-						<li>
-							<a class="icon solid" href="index.html"><span>Pocetna strana</span></a>
-						</li>
-						<li>
-							<a class="icon solid" href="contact.html"><span>Kontakt</span></a>
-						</li>
-						<li>
-							<a class="icon solid" href="about.html"><span>O autorki</span></a>
-						</li>
-						<li>
-							<a class="icon solid" onclick="openDocDialog()"><span>Dokuemntacija</span></a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</section>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-		<!-- Features -->
-		<section id="features">
-			<div class="container">
-				<header>
-					<h2>GDE ICI STA VIDETI</h2>
-				</header>
-				<div class="row aln-center">
-					<div class="col-4 col-6-medium col-12-small">
-						<!-- Feature -->
-						<section>
-							<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-							<header>
-								<h3>Bolonja</h3>
-							</header>
-							<p>
-								Za mene Bolonja je najukusniji grad Italije ili, da se izrazim manje poetično -
-								gastronomska prestonica Italije. Sa drugaricama sam namenski napravila ,,food tour” u
-								nameri da probamo što više toga i jele smo na čak 5 mesta za jedan dan, dosta smo delile
-								hranu da se ne potrošimo i ne prejedemo, a to je i moj savet vama ukoliko imate ideju da
-								probate što više jela.
-								</a>.
-							</p>
-						</section>
-					</div>
-					<div class="col-4 col-6-medium col-12-small">
-						<!-- Feature -->
-						<section>
-							<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-							<header>
-								<h3>San Marino</h3>
-							</header>
-							<p>
-								San Marino - moja 32. posećena zemlja! Da budem iskrena, nisam u ,,pohodu" da osvojim
-								sve zemlje sveta, ali bih volela da vidim sve zemlje Evrope i to u narednih par godina.
-								🍀 Baš zato pomislih skoro da mi San Marino nikada neće biti bliži nego sada, a i pravo
-								da vam kažem trebalo mi je neko mini putovanje da zaboravim na zavrzlamu sa domom.
-							</p>
-						</section>
-					</div>
-					<div class="col-4 col-6-medium col-12-small">
-						<!-- Feature -->
-						<section>
-							<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-							<header>
-								<h3>Stopica Pecina</h3>
-							</header>
-							<p>
-								Poseta Stopića pećini je bila pravo osveženje, poželela sam da ne izađem ceo dan iz nje.
-								I to je upravo prednost letnje posete. Prednost u drugim periodima godine jeste ta što
-								su njene čuvene bigrene kade pune vode i pećinu doživite u punom sjaju. Svakako kad god
-								došli oduševićete se onim šta je priroda kreirala.
-							</p>
-						</section>
-					</div>
-					<div class="col-12">
-						<ul class="actions">
-							<li>
-								<a href="#" class="button icon solid fa-file">Gde sam sve bila</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Main -->
-		<section id="main">
-			<div class="container">
-				<div class="row">
-					<!-- Content -->
-					<div id="content" class="col-8 col-12-medium">
-						<!-- Post -->
-						<article class="box post">
-							<header>
-								<h2>
-									<a href="#">Djenova
-								</h2>
-							</header>
-							<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-							<h3>Odusevljenje</h3>
-							<p>
-								Đenova u epizodi: od oduševljenosti jer na sve strane vidim pesto i slatke uličice do
-								prvog italijanskog grada u kom se nisam osetila sigurno.
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css"
+      integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
 
-								Na putu ka mom omiljenom mestu u Italiji moje najbolje drugarice i ja smo jedan dan
-								iskoristile da posetimo Đenovu, rodno mesto pesta i čuvenog Kristofera Kolumba.
-							</p>
-							<div class="readmore hidden">
-								Šta sve možete raditi u Đenovi za jedan dan?
-								1. Prošetajte najvećom lukom u Italiji i ulicom Via Garibaldi
-								2. Možete posetiti drugi po veličini akvarijum u Evropi (cena karte za odrasle je 29€)
-								3. Postoji i replika kuće Kristofera Kolumba na mestu gde je bila prava
-								4. Probajte domaći pesto ili neko jelo sa pestom u restoranu i obavezno fokaču
-								(italijanska pogača iz Ligurijske regije gde je i Đenova)
-								Da li biste nešto dodali na listu? ☺️
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-								E sada, da se vratim na početak objave. U Đenovi je bilo lepo sve dok nije počeo da pada
-								mrak i da se na sve strane skupljanju ,,sumnjiva lica” koje obavljaju ilegalne radnje na
-								sred ulice. Drugarice i ja smo večeru nismo žvakale već progutale jer smo želele što pre
-								stići do hotela. I nažalost taj odlomak dana je pomalo pokvario utisak o gradu koji mi
-								je na prvu bio simpatičan.
-							</div>
-							<button onclick="showMore(this)" class="button icon solid fa-file">Prikazi vise</button>
-						</article>
+  <body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center" id="topBarInfo"></div>
+          </div>
+          <div class="col-lg-6 text-center text-lg-right">
+            <div
+              class="d-inline-flex align-items-center"
+              id="topBarSocial"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
 
-						<!-- Post -->
-						<article class="box post">
-							<header>
-								<h2>
-									<a>Tunis</a>
-								</h2>
-							</header>
-							<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-							<p>
-								Možda najlepše mesto da napravite prave letnje fotografije u Tunisu jeste Sidi Bu Said.
-								Moj saputnik i ja smo čak komentarisali da je uživo lepši i da fotografije nisu ni pola
-								lepe kao što je stvarnost.
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+      <div
+        class="container-lg position-relative p-0 px-lg-3"
+        style="z-index: 9"
+      >
+        <nav
+          class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5"
+        ></nav>
+      </div>
+    </div>
+    <!-- Navbar End -->
 
-								Ovaj gradić smešten je na moru i njegove kuće su ofarbane u belo, a prozori i vrata su
-								plavi.
-								Ove boje grada su inspirisane palatom barona Rodolfa d'Erlangera, poznatog francuskog
-								slikara i muzikologa poznatog po svom radu na promociji arapske muzike, koji je živeo u
-								Sid Bou Saidu od 1909. do svoje smrti 1932. godine. Od tada je grad postao sinonim za
-								umetnost i kreativnost, pružajući utočište mnogim poznatim slikarima, piscima i
-								novinarima.
-							</p>
-							<p class="readmore hidden">
-								U Sidi Bu Saidu je najbolje provesti vreme tako što ćete se izgubiti u njegovim
-								krivudavim ulicama, a možete i pazariti u malim umetničkim radnjama ili sesti na piće u
-								neki od restorana.
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0">
+      <div id="header-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" id="coverWrap"></div>
+        <a
+          class="carousel-control-prev"
+          href="#header-carousel"
+          data-slide="prev"
+        >
+          <div class="btn btn-dark" style="width: 45px; height: 45px">
+            <span class="carousel-control-prev-icon mb-n2"></span>
+          </div>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#header-carousel"
+          data-slide="next"
+        >
+          <div class="btn btn-dark" style="width: 45px; height: 45px">
+            <span class="carousel-control-next-icon mb-n2"></span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- Carousel End -->
 
-								Sidi Bu Said je povezan sa glavnim gradom Tunisom redovnim prigradskim vozom. Putovanje
-								traje otprilike 35 minuta. A možete i sa nekom od naših turističkih agencija iz
-								tunižanskih letovališta na izlet ovde. 🥰
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="aboutSection">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-lg-6" style="min-height: 500px">
+            <div class="position-relative h-100">
+              <img
+                class="position-absolute w-100 h-100"
+                src="img/about.jpg"
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 pt-5 pb-lg-5">
+            <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+              <h6
+                class="text-primary text-uppercase"
+                style="letter-spacing: 5px"
+              >
+                About Us
+              </h6>
+              <h1 class="mb-3">EXPLORE OUR DIVERSE AND EXCITING PORTFOLIO</h1>
+              <p>
+                Whether you choose to stay in one of our Gourmet Inclusive®
+                properties, an à la carte hotel, an all-inclusive resort or a
+                private villa, your experience will be one that you'll never
+                forget. Because luxury is more than beautiful architecture and
+                accommodations...it's anticipating the needs of our guests
+                without ever being intrusive.
+              </p>
+              <div class="row mb-4" id="aboutImg"></div>
+              <a href="contact.html" class="btn btn-primary mt-1">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
 
-								Ukoliko biste pak odseli u ovom gradu, važno je da znate da su hoteli u njemu uglavnom
-								jako skupi.
+    <!-- Feature Start -->
+    <div class="container-fluid pb-5">
+      <div class="container pb-5">
+        <div class="row" id="featuresWrap"></div>
+      </div>
+    </div>
+    <!-- Feature End -->
 
-								Da li ste imali prilike do sada posetiti ovaj preslatki gradić? 😍
-							</p>
-							<button onclick="showMore(this)" class="button icon solid fa-file">Prikazi vise</button>
+    <!-- Destination Start -->
+    <div class="container-fluid py-5" id="destinationSection">
+      <div class="container pt-5 pb-3">
+        <div class="text-center mb-3 pb-3">
+          <h6 class="text-primary text-uppercase" style="letter-spacing: 5px">
+            Destination
+          </h6>
+          <h1>Explore Top Destination</h1>
+        </div>
+        <div class="row" id="destinationWrap"></div>
+      </div>
+    </div>
+    <!-- Destination Start -->
 
-						</article>
-					</div>
+    <!-- Service Start -->
+    <div class="container-fluid py-5">
+      <div class="container pt-5 pb-3">
+        <div class="text-center mb-3 pb-3">
+          <h6 class="text-primary text-uppercase" style="letter-spacing: 5px">
+            Services
+          </h6>
+          <h1>Exclusive Services</h1>
+        </div>
+        <div class="row" id="serviceWrap"></div>
+      </div>
+    </div>
+    <!-- Service End -->
 
-					<!-- Sidebar -->
-					<div id="sidebar" class="col-4 col-12-medium">
-						<!-- Excerpts -->
-						<section>
-							<ul class="divided">
-								<li>
-									<!-- Excerpt -->
-									<article class="box excerpt">
-										<header>
-											<span class="date">30 Jul</span>
-											<h3><a>Brunszvik-kastély</a></h3>
-										</header>
-										<p>
-											Osim što je lep i vredan posete, dvorac Brunsvik krije Betovenovu uzbudljivu
-											ljubavnu priču. 🤫
+    <!-- Packages Start -->
+    <div class="container-fluid py-5" id="offersSection">
+      <div class="container pt-5 pb-3">
+        <div class="text-center mb-3 pb-3">
+          <h6 class="text-primary text-uppercase" style="letter-spacing: 5px">
+            Packages
+          </h6>
+          <h1>Best Restauraunt Offers</h1>
+        </div>
+        <div class="row mb-3">
+          <div class="col-sm-12">
+            <form action="#" name="formSort">
+              <select name="sort" id="selectSort">
+                <option value="0">Sort price</option>
+                <option value="1">Low to High</option>
+                <option value="2">High to Low</option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <div class="row" id="packagesWrap"></div>
+      </div>
+    </div>
+    <!-- Packages End -->
 
-											U dvorcu iz 18. veka čeka vas najlepši park među dvorskim parkovima u
-											Mađarskoj i Betovenov muzej.
-										</p>
-									</article>
-								</li>
-								<li>
-									<!-- Excerpt -->
-									<article class="box excerpt">
-										<header>
-											<span class="date">15 Avgust</span>
-											<h3><a>Kapadokija</a></h3>
-										</header>
-										<p>
-											Kvadovi. Ukoliko ste za avanturu uz kratke pauze na zanimljvim mestima
-											kvadovi će vas oduševiti. Svakako preporuka je da obučete nešto što vam neće
-											biti žao da isprljate u kapadokijskoj prašini plus obavezno stavite naočare
-											da vam pesak ne ide u oči dok vozite.
-										</p>
-									</article>
-								</li>
-							</ul>
-						</section>
+    <!-- Registration Start -->
+    <div class="container-fluid bg-registration py-5" style="margin: 90px 0">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-7 mb-5 mb-lg-0">
+            <div class="mb-4">
+              <h6
+                class="text-primary text-uppercase"
+                style="letter-spacing: 5px"
+              >
+                Mega Offer
+              </h6>
+              <h1 class="text-white">
+                <span class="text-primary">UP TO 25% OFF</span> OUR BEST
+                AVAILABLE RATES AND EXCLUSIVE PERKS
+              </h1>
+            </div>
+            <p class="text-white">
+              Book your next getaway with a payment plan through our new
+              partnership with Icon and enjoy 0% APR.
+            </p>
+            <ul class="list-inline text-white m-0">
+              <li class="py-2">
+                <i class="fa fa-check text-primary mr-3"></i>TRAVEL WITH PEACE
+                OF MIND
+              </li>
+              <li class="py-2">
+                <i class="fa fa-check text-primary mr-3"></i>Honeymoon and
+                Anniversary Celebrations
+              </li>
+              <li class="py-2">
+                <i class="fa fa-check text-primary mr-3"></i>PROPOSAL PACKAGES
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-5">
+            <div class="card border-0">
+              <div class="card-header bg-primary text-center p-4">
+                <h1 class="text-white m-0">Offer Ends In</h1>
+              </div>
+              <div class="card-body rounded-bottom bg-white p-5">
+                <h1 class="text-center" id="offerEnds"></h1>
+                <p class="text-center m-0">Hurry up before it ends!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Registration End -->
 
-						<!-- Highlights -->
-						<section>
-							<ul class="divided">
-								<li>
-									<!-- Highlight -->
-									<article class="box highlight">
-										<header>
-											<h3><a href="#">Jordan</a></h3>
-										</header>
-										<a href="#" class="image left"><img src="images/pic06.jpg" alt="" /></a>
-										<p>
-											Ako bih mogla da jednom rečju opišem Jordance to bi bilo DOMAĆINI! Odavno se
-											nisam osećala negde dobrodošlo koliko u ovoj zemlji Bliskog istoka. Nemojte
-											da se začudite ako vas često ljudi zaustave na sred ulice i upitaju vas
-											odakle ste. Na vaš odgovor uvek sledi isto: WELCOME! i širok osmeh.
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+      <div class="container pt-5 pb-3">
+        <div class="text-center mb-3 pb-3">
+          <h6 class="text-primary text-uppercase" style="letter-spacing: 5px">
+            Guides
+          </h6>
+          <h1>Our Travel Guides</h1>
+        </div>
+        <div class="row" id="teamWrap"></div>
+      </div>
+    </div>
+    <!-- Team End -->
 
-											U Jordanu vlada neki organizovani haos, ali je vrlo bezbedno, možete u ovu
-											zemlju lagano i na solo putovanje.
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="text-center mb-3 pb-3">
+          <h6 class="text-primary text-uppercase" style="letter-spacing: 5px">
+            Testimonial
+          </h6>
+          <h1>What Say Our Clients</h1>
+        </div>
+        <div class="row" id="clientsWrap"></div>
 
-											Hrana je preukusna, pa me ni ne čudi da ima dosta buckastih Jordanaca - i ja
-											bih bila da živim ovde! 🤭 Oni što su vitki verovatno to mogu da opravdaju
-											brdovitim reljefom.
-										</p>
-										<ul class="actions">
-											<li>
-												<a href="#" class="button icon solid fa-file">Pogledaj vise</a>
-											</li>
-										</ul>
-									</article>
-								</li>
-								<li>
-									<!-- Highlight -->
-									<article class="box highlight">
-										<header>
-											<h3><a href="#">Kolmar</a></h3>
-										</header>
-										<a href="#" class="image left"><img src="images/pic07.jpg" alt="" /></a>
-										<p>
-											Kolmar odveć sam po sebi izgleda kao gradić iz bajki, a maštoviti i
-											kreativni žitelji oko praznika se do detalja potrude oko dekoracije fasada i
-											ulica da prosto ne znate gde biste pre gledali. 😍 Svaki kutak se čini
-											savršenim za lepu fotku, ali ovih pet mesta je po meni ubedljivo najlepše:
-											1. Maison dite Au Pelerin
-											2. Quai de la Poissonnerie (La Petite Venise)
-											3. Au Vieux Pignon
-											4. Pont Rue des Tanneurs
-											5. Les Tanneurs
-										</p>
-										<ul class="actions">
-											<li>
-												<a href="#" class="button icon solid fa-file">Pogledaj vise</a>
-											</li>
-										</ul>
-									</article>
-								</li>
-							</ul>
-						</section>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
+        <p class="text-center" id="clientsButtonWrap"></p>
+      </div>
+    </div>
+    <!-- Testimonial End -->
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/breaks.js"></script>
+    <!-- Blog Start -->
+    <div class="container-fluid py-5">
+      <div class="container pt-5 pb-3">
+        <div class="text-center mb-3 pb-3">
+          <h6 class="text-primary text-uppercase" style="letter-spacing: 5px">
+            Our Blog
+          </h6>
+          <h1>Latest From Our Blog</h1>
+        </div>
+        <div class="row pb-3" id="blogWrap"></div>
+      </div>
+    </div>
+    <!-- Blog End -->
 
-	<script src='js/docs.js'></script>
-	<script src="js/main.js"></script>
-	<script src="js/generator.js"></script>
-	<script src='js/contact.js'></script>
-	<script src="js/dialog.js"></script>
-	<script>
-		const generatorSingleton = new Generator();
-	</script>
-</body>
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5"
+      style="margin-top: 90px"
+    >
+      <div class="row pt-5">
+        <div class="col-lg-4 col-md-6 mb-5">
+          <a href="" class="navbar-brand">
+            <h1 class="text-primary">
+              <span class="text-white">TRAVEL</span>ER
+            </h1>
+          </a>
+          <p>
+            Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore
+            rebum lorem ipsum dolor. No sed vero lorem dolor dolor
+          </p>
+          <h6
+            class="text-white text-uppercase mt-4 mb-3"
+            style="letter-spacing: 5px"
+          >
+            Follow Us
+          </h6>
+          <div class="d-flex justify-content-start" id="footerSocial"></div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <h5
+            class="text-white text-uppercase mb-4"
+            style="letter-spacing: 5px"
+          >
+            Usefull Links
+          </h5>
+          <div
+            class="d-flex flex-column justify-content-start"
+            id="footerLinks"
+          ></div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <h5
+            class="text-white text-uppercase mb-4"
+            style="letter-spacing: 5px"
+          >
+            Contact Us
+          </h5>
+          <div id="footerContactInfo"></div>
+          <h6
+            class="text-white text-uppercase mt-4 mb-3"
+            style="letter-spacing: 5px"
+          >
+            Newsletter
+          </h6>
+          <div class="w-100">
+            <form action="#" name="footerLetter">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control border-light"
+                  name="mail"
+                  style="padding: 25px"
+                  placeholder="Your Email"
+                />
+                <div class="input-group-append">
+                  <button
+                    type="button"
+                    id="letterSubmit"
+                    class="btn btn-primary px-3"
+                  >
+                    Sign Up
+                  </button>
+                </div>
+              </div>
+              <p id="letterError"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="fa fa-angle-double-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="./lib/easing/easing.min.js"></script>
+    <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"
+      integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
 </html>

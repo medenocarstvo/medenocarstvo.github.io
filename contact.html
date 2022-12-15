@@ -1,98 +1,289 @@
 <!DOCTYPE html>
-<!--
-	Strongly Typed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="en">
   <head>
-    <title>Licni blog</title>
     <meta charset="utf-8" />
+    <title>TRAVELER - Free Travel Website Template</title>
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
+      name="keywords"
+      content="Travel, Agency, South America, Best price, Hotels"
     />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="styles.css"/>
+    <meta
+      name="description"
+      content="Whether you choose to stay in one of our Gourmet Inclusive® properties, an à la carte hotel, an all-inclusive resort or a private villa, your experience will be one that you'll never forget. "
+    />
+    <meta name="copyright" content="TRAVELER 2022" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
   </head>
-  <body class="homepage is-preload">
-    <div id="page-wrapper">
-      <!-- Header -->
-      <section id="header">
-        <div class="container">
-          <!-- Logo -->
-          <h1 id="logo"><a href="index.html">Licni blog putovanja</a></h1>
-          <!-- Nav -->
-          <nav id="nav">
-            <ul>
-              <li>
-                <a class="icon solid" href="index.html"
-                  ><span>Pocetna strana</span></a
-                >
-              </li>
-              <li>
-                <a class="icon solid" href="contact.html"
-                  ><span>Kontakt</span></a
-                >
-              </li>
-              <li>
-                <a class="icon solid" href="about.html"
-                  ><span>O autorki</span></a
-                >
-              </li>
-            </ul>
-          </nav>
+
+  <body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center" id="topBarInfo"></div>
+          </div>
+          <div class="col-lg-6 text-center text-lg-right">
+            <div
+              class="d-inline-flex align-items-center"
+              id="topBarSocial"
+            ></div>
+          </div>
         </div>
-      </section>
-      <section id="main">
-        <div class="container">
-          <header>
-            <h2>Pitanja? Komentari?</h2>
-          </header>
-          <div class="row">
-            <div class="col-12 col-12-medium">
-              <section>
-                <form method="post">
-                  <div class="row gtr-50">
-                    <div class="col-6 col-12-small">
-                      <input id="name" name="name" placeholder="Ime" type="text" />
-                    </div>
-                    <div class="col-6 col-12-small">
-                      <input id="lastname" name="name" placeholder="Prezime" type="text" />
-                    </div>
-                    <div class="col-6 col-12-small">
-                      <input id="email" name="email" placeholder="Email" type="text" />
-                    </div>
-                    <div class="col-12">
-                      <textarea id="message" name="message" placeholder="Poruka"></textarea>
-                    </div>
-                    <div class="col-12">
-                      <a
-                        href="#"
-                        class="form-button-submit button icon solid fa-envelope"
-                        onclick="validateContactForm()"
-                        >Posalji poruku</a
-                      >
-                    </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+      <div
+        class="container-lg position-relative p-0 px-lg-3"
+        style="z-index: 9"
+      >
+        <nav
+          class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5"
+        ></nav>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid page-header">
+      <div class="container">
+        <div
+          class="d-flex flex-column align-items-center justify-content-center"
+          style="min-height: 400px"
+        >
+          <h3 class="display-4 text-white text-uppercase">Contact</h3>
+          <div class="d-inline-flex text-white">
+            <p class="m-0 text-uppercase">
+              <a class="text-white" href="">Home</a>
+            </p>
+            <i class="fa fa-angle-double-right pt-1 px-3"></i>
+            <p class="m-0 text-uppercase">Contact</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="text-center mb-3 pb-3">
+          <h6 class="text-primary text-uppercase" style="letter-spacing: 5px">
+            Contact
+          </h6>
+          <h1>Contact For Any Query</h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <p class="text-success" id="formSuccess"></p>
+            <div class="contact-form bg-white" style="padding: 30px">
+              <form action="#" name="sentMessage" id="contactForm">
+                <div class="form-row">
+                  <div class="control-group col-sm-6">
+                    <input
+                      type="text"
+                      class="form-control p-4"
+                      id="name"
+                      name="name"
+                      placeholder="Full Name"
+                    />
+                    <p id="nameError" class="text-danger"></p>
                   </div>
-                </form>
-              </section>
-            </div>
-            <span id="response"></span>
+                  <div class="control-group col-sm-6">
+                    <input
+                      type="email"
+                      class="form-control p-4"
+                      id="email"
+                      name="email"
+                      placeholder="Your Email"
+                    />
+                    <p class="text-danger"></p>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <select name="subject" id="subject" class="form-control p-4">
+                    <option value="0">Choose topic of message</option>
+                    <option value="1">Travel Info</option>
+                    <option value="2">Request Refund</option>
+                    <option value="2">Book a trip</option>
+                  </select>
+                  <p class="text-danger"></p>
+                </div>
+                <div class="control-group">
+                  <label for="role">Choose client role</label>
+                  <br />
+                  <input type="radio" name="role" id="student" /> Student
+                  <input type="radio" name="role" class="ml-3" id="Regular" />
+                  Working<input
+                    type="radio"
+                    name="role"
+                    class="ml-3"
+                    id="Regular"
+                  />
+                  Not working
+                  <p class="text-danger" id="roleError"></p>
+                </div>
+                <div class="control-group mt-3">
+                  <textarea
+                    class="form-control py-3 px-4"
+                    rows="5"
+                    id="message"
+                    placeholder="Message"
+                  ></textarea>
+                  <p class="text-danger"></p>
+                </div>
+                <div class="control-group">
+                  <input
+                    type="checkbox"
+                    name="terms"
+                    class="mr-2"
+                    id="student"
+                  />
+                  I am over 18 years old.
+                  <p class="text-danger"></p>
+                </div>
+                <div class="text-center mt-3">
+                  <button
+                    class="btn btn-primary py-3 px-4"
+                    type="button"
+                    id="sendMessageButton"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
+    <!-- Contact End -->
 
-    <!-- vendor -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/breaks.js"></script>
-    <script src="assets/js/util.js"></script>
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5"
+      style="margin-top: 90px"
+    >
+      <div class="row pt-5">
+        <div class="col-lg-4 col-md-6 mb-5">
+          <a href="" class="navbar-brand">
+            <h1 class="text-primary">
+              <span class="text-white">TRAVEL</span>ER
+            </h1>
+          </a>
+          <p>
+            Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore
+            rebum lorem ipsum dolor. No sed vero lorem dolor dolor
+          </p>
+          <h6
+            class="text-white text-uppercase mt-4 mb-3"
+            style="letter-spacing: 5px"
+          >
+            Follow Us
+          </h6>
+          <div class="d-flex justify-content-start" id="footerSocial"></div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <h5
+            class="text-white text-uppercase mb-4"
+            style="letter-spacing: 5px"
+          >
+            Usefull Links
+          </h5>
+          <div
+            class="d-flex flex-column justify-content-start"
+            id="footerLinks"
+          ></div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <h5
+            class="text-white text-uppercase mb-4"
+            style="letter-spacing: 5px"
+          >
+            Contact Us
+          </h5>
+          <div id="footerContactInfo"></div>
+          <h6
+            class="text-white text-uppercase mt-4 mb-3"
+            style="letter-spacing: 5px"
+          >
+            Newsletter
+          </h6>
+          <div class="w-100">
+            <form action="#" name="footerLetter">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control border-light"
+                  name="mail"
+                  style="padding: 25px"
+                  placeholder="Your Email"
+                />
+                <div class="input-group-append">
+                  <button
+                    type="button"
+                    id="letterSubmit"
+                    class="btn btn-primary px-3"
+                  >
+                    Sign Up
+                  </button>
+                </div>
+              </div>
+              <p id="letterError"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
 
-    <script src="js/contact.js"></script>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="fa fa-angle-double-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
   </body>
 </html>
