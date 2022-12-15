@@ -712,7 +712,7 @@ function footer() {
   letterSubmit.addEventListener("click", () => {
     let checkEmail = /([\w\.]+)@([\w\.]+)\.(\w+)/;
     if (!checkEmail.test(footerForma.mail.value)) {
-      letterError.innerHTML = "Porgešan unos email-a";
+      letterError.innerHTML = "Invalid mail input";
       letterError.classList.remove("text-success");
       letterError.classList.add("text-danger");
     } else {
@@ -851,7 +851,7 @@ function cover() {
                         <h1 class="display-3 text-white mb-md-4">
                         ${coverInfo[i][2]}
                         </h1>
-                        <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2"
+                        <a href="contact.html" class="btn btn-primary py-md-3 px-md-5 mt-2"
                           >${coverInfo[i][3]}</a
                         >
                       </div>
